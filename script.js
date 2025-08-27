@@ -5,28 +5,28 @@ const CONFIG = {
     loginSecret: "pandi", // Change this to a secret word your friend would know
 
     gallery: [
-        { type: 'image', src: "media/photo1.jpg", caption: "Chubby Harishmita ☺️" },
-        { type: 'image', src: "media/photo2.jpg", caption: "Forced to stand there, lol" },
-        { type: 'image', src: "media/photo3.jpg", caption: "why am I here?" },
-        { type: 'image', src: "media/photo4.jpg", caption: "still immature back then 😜" },
-        { type: 'image', src: "media/photo5.jpg", caption: "best MOM 🥰" },
-        { type: 'image', src: "media/photo6.jpg", caption: "COOL family 😎" },
-        { type: 'image', src: "media/photo7.jpg", caption: "sleepy faceee 🤔" },
-        { type: 'image', src: "media/photo8.jpg", caption: "fake smiling for photo " },
-        { type: 'image', src: "media/photo9.jpg", caption: "asal nen endhuku unnan ra babu annatu pettav mokham 😆" },
-        { type: 'image', src: "media/photo10.jpg", caption: "eppud nidra mokham eskone untav 😪" },
-        { type: 'image', src: "media/photo11.jpg", caption: "FEST ante matram bane ready avthav 😛" },
-        { type: 'image', src: "media/photo12.jpg", caption: "best DAD 🥰" },
-        { type: 'image', src: "media/photo13.jpg", caption: "kallu mooseyadam, chi chi so unproffesional 🫣" },
-        { type: 'image', src: "media/photo14.jpg", caption: "Kothi mokham 🤪" },
-        { type: 'image', src: "media/photo15.jpg", caption: "photo teskovadam kuda radhu, papam " },
-        { type: 'image', src: "media/photo16.jpg", caption: "mugguriki mugguru saripoyaru 😂" },
-        { type: 'image', src: "media/photo17.jpg", caption: "overaction cheyyamante first untav 🙄" },
-        { type: 'image', src: "media/photo18.jpg", caption: "queen Elizabeth mari 😒" },
-        { type: 'image', src: "media/photo19.jpg", caption: "best brother u can ask for 🥰" },
-        { type: 'image', src: "media/photo20.jpg", caption: "final ga navvadam nerchukunnav 🤭" },
-        { type: 'video', src: "media/video1.mp4", caption: "A little extra surprise!" },
-        { type: 'video', src: "media/dance.mp4", caption: "And to finish... your amazing talent!(edho JENNIE la dance esinattu feel aipovadam 😝)" }
+        { type: 'image', src: "photo1.jpg", caption: "Chubby Harishmita ☺️" },
+        { type: 'image', src: "photo2.jpg", caption: "Forced to stand there, lol" },
+        { type: 'image', src: "photo3.jpg", caption: "why am I here?" },
+        { type: 'image', src: "photo4.jpg", caption: "still immature back then 😜" },
+        { type: 'image', src: "photo5.jpg", caption: "best MOM 🥰" },
+        { type: 'image', src: "photo6.jpg", caption: "COOL family 😎" },
+        { type: 'image', src: "photo7.jpg", caption: "sleepy faceee 🤔" },
+        { type: 'image', src: "photo8.jpg", caption: "fake smiling for photo " },
+        { type: 'image', src: "photo9.jpg", caption: "asal nen endhuku unnan ra babu annatu pettav mokham 😆" },
+        { type: 'image', src: "photo10.jpg", caption: "eppud nidra mokham eskone untav 😪" },
+        { type: 'image', src: "photo11.jpg", caption: "FEST ante matram bane ready avthav 😛" },
+        { type: 'image', src: "photo12.jpg", caption: "best DAD 🥰" },
+        { type: 'image', src: "photo13.jpg", caption: "kallu mooseyadam, chi chi so unproffesional 🫣" },
+        { type: 'image', src: "photo14.jpg", caption: "Kothi mokham 🤪" },
+        { type: 'image', src: "photo15.jpg", caption: "photo teskovadam kuda radhu, papam " },
+        { type: 'image', src: "photo16.jpg", caption: "mugguriki mugguru saripoyaru 😂" },
+        { type: 'image', src: "photo17.jpg", caption: "overaction cheyyamante first untav 🙄" },
+        { type: 'image', src: "photo18.jpg", caption: "queen Elizabeth mari 😒" },
+        { type: 'image', src: "photo19.jpg", caption: "best brother u can ask for 🥰" },
+        { type: 'image', src: "photo20.jpg", caption: "final ga navvadam nerchukunnav 🤭" },
+        { type: 'video', src: "video1.mp4", caption: "A little extra surprise!" },
+        { type: 'video', src: "dance.mp4", caption: "And to finish... your amazing talent!(edho JENNIE la dance esinattu feel aipovadam 😝)" }
     ],
 
     finalNote: `Hiiiii PANDI!!!!!!\n\nJust wanted to write a quick note to say how amazing you are. Happy Birthday to the best little sister(even when you steal my snacks)! You're growing up way too fast, I still remember the whole day crying Harishmita >.<\n\nNext year you might go to a different city for college, so just a small reminder to spend as much time as u can with Dad, Mum and the whole family... since you might really start missing them later on, lol. \n\n Don't take too much stress for the Mains exam, but dont take it lighty as well since its an imporant one \n\nHope your day is full of cake, laughter, and zero chores! hehehehe\n\nHappy Birthday!`,
@@ -247,4 +247,5 @@ document.addEventListener('DOMContentLoaded', () => {
             showPage(button.getAttribute('data-next'));
         });
     });
+
 });
