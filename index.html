@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Kenisha's BIRTHDAYYYYY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 font-sans">
+
+    <canvas id="confetti-canvas"></canvas>
+    
+    <audio id="gallery-audio" loop>
+        <source src="media/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="birthday-audio" loop>
+        <source src="media/birthday_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <main id="app-container" class="w-full min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800 flex items-center justify-center p-4 transition-all duration-500">
+
+        <div id="login-page" class="page w-full max-w-md mx-auto">
+            <div class="card">
+                <h1 class="text-4xl font-bold mb-2" id="login-title">A Surprise for...</h1>
+                <p class="mb-6">What does your brother call you often?</p>
+                <input id="secret-word-input" type="password" placeholder="Secret word..." class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-50 text-gray-800 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-white mb-4">
+                <button id="unlock-button" class="btn">Unlock</button>
+                <p id="error-message" class="text-red-300 mt-4 animate-pulse hidden">Oops! Try again.</p>
+            </div>
+        </div>
+
+        <div id="prompt-page" class="page w-full max-w-lg mx-auto hidden">
+            <div class="card">
+                <h2 class="text-3xl font-bold mb-6">Before we move on...</h2>
+                <p class="text-xl mb-8">How about we look at some pictures of you?</p>
+                <button data-next="gallery-page" class="btn">Let's Do It!</button>
+            </div>
+        </div>
+
+        <div id="gallery-page" class="page hidden">
+            <button id="close-gallery-btn" class="absolute top-4 right-6 text-white text-4xl font-bold z-50">&times;</button>
+            <div class="relative w-full h-full flex flex-col items-center justify-center p-4">
+                <div class="relative">
+                    <img id="gallery-image" src="" alt="Gallery photo">
+                    <video id="gallery-video" class="hidden" controls></video>
+                    <p id="gallery-caption" class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-3 text-center"></p>
+                </div>
+                <div class="mt-4 text-center">
+                    <div class="flex justify-center gap-4">
+                        <button id="prev-button" class="btn">Previous</button>
+                        <button id="next-button" class="btn">Next</button>
+                    </div>
+                    <button data-next="notepad-page" class="btn bg-green-500 hover:bg-green-600 mt-4">There's More? Yes, there is...</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="notepad-page" class="page w-full max-w-2xl mx-auto hidden">
+            <div class="card notepad-card p-0 shadow-2xl">
+                <div id="notepad-content">
+                    <span id="typed-text"></span><span id="cursor" class="animate-ping">|</span>
+                </div>
+            </div>
+            <button data-next="birthday-page" id="notepad-continue-button" class="btn mt-6 opacity-0 transition-opacity duration-500">Continue</button>
+        </div>
+
+        <div id="birthday-page" class="page w-full max-w-4xl mx-auto hidden relative">
+            <div id="emoji-container" class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"></div>
+            <div class="card">
+                <h1 id="birthday-title" class="text-6xl font-bold mb-4 text-center min-h-[80px]"></h1>
+                <p id="birthday-message" class="text-2xl italic mb-8">Have a great 17th BIRTHDAYYYY!!!!!!</p>
+                <button data-next="credits-page" class="btn opacity-0" id="birthday-continue-btn">One Last Thing...</button>
+            </div>
+        </div>
+
+        <div id="credits-page" class="page w-full max-w-xl mx-auto hidden">
+            <div class="card">
+                <h2 class="text-3xl font-bold mb-4">Credits</h2>
+                <p id="credits-message" class="text-xl mb-6">...</p>
+                <p class="text-sm text-gray-300">Made with ❤️ by your BROTHER.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
